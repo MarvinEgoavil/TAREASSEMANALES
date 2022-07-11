@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio HTML 1</title>
-  </head>
 
-  <body></body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio HTML 1</title>
+  <script type="text/javascript" charset="UTF-8" src="js.js
+   "></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Formulario</h1>
+  </header>
+
+  <form>
+    <fieldset>
+      <legend> Datos</legend>
+      <ul>
+        <li>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required autofocus>
+        </li>
+        <li>
+          <label for="correo">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </li>
+        <li>
+          <label for="url">URL:</label>
+          <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal">
+        </li>
+        <li>
+          <label for="date">Fecha:</label>
+          <input type="date" id="date" name="date" required>
+        </li>
+        <li>
+          <label for="time">Fecha:</label>
+          <input type="time" id="time" name="time" required>
+        </li>
+        <li>
+          <label for="date-time">Fecha y hora:</label>
+          <input type="datetime-local" id="date-time" name="date-time" required>
+        </li>
+        <li>
+          <label for="month">Mes:</label>
+          <input type="month" id="month" name="month" required>
+        </li>
+        <li>
+          <label for="week">Semana:</label>
+          <input type="week" id="week" name="week" required>
+        </li>
+        <li>
+          <label for="number">Número:</label>
+          <input type="number" id="number" name="number" min="-10" max="10" required>
+        </li>
+        <li>
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone">
+        </li>
+      </ul>
+    </fieldset>
+
+
+
+    <!-- Submit envia el form -->
+    <button type="submit">Enviar</button>
+
+    <!-- Reset borra todos los campos -->
+    <button type="reset">Limpiar</button>
+
+    <!-- Button no hace nada (pensado para vincular acciones con JS) -->
+    <button type="button">Click!</button>
+  </form>
+
+
+
+
+
+</body>
+
 </html>
