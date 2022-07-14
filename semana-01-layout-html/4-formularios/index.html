@@ -16,7 +16,7 @@
     <h1>Formulario</h1>
   </header>
 
-  <form>
+  <form action="#" method="get">
     <fieldset>
       <legend> Datos</legend>
       <ul>
@@ -58,7 +58,15 @@
         </li>
         <li>
           <label for="phone">Teléfono:</label>
-          <input type="tel" id="phone" name="phone">
+          <input type="tel" id="phone" name="phone" value="34" readonly>
+        </li>
+        <li>
+          <label for="search">Términos de Búsqueda:</label>
+          <input type="search" id="search" name="search" disabled>
+        </li>
+        <li>
+          <label for="color">Color:</label>
+          <input type="color" id="color" name="color">
         </li>
       </ul>
     </fieldset>
@@ -67,15 +75,6 @@
 
     <!-- Submit envia el form -->
     <button type="submit">Enviar</button>
-
-    <!-- Reset borra todos los campos -->
-    <button type="reset">Limpiar</button>
-
-    <!-- Button no hace nada (pensado para vincular acciones con JS) -->
-    <button type="button">Click!</button>
-  </form>
-
-
 
 
 
